@@ -33,7 +33,7 @@ public class FitnessDataController {
 		return fitnessDataService.getAllFitnessData();
 	}
 	
-	@RequestMapping(method=RequestMethod.GET, value="/fitness/date/{date}")
+	@RequestMapping(method=RequestMethod.GET, value="/fitness/{date}")
 	public FitnessData getFitnessDataByDate(@PathVariable String date){
 		return fitnessDataService.getFitnessDataByDate(date);
 	}
